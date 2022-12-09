@@ -20,3 +20,5 @@ router.get('/', async (req, res) => {
 
     res.status(200).json(posts);
 })
+
+module.exports = router;

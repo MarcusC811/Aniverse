@@ -10,7 +10,7 @@ Post.init(
             allowNull: false,
         },
         rating: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         complete: {
@@ -29,11 +29,11 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        postUser: {
-            type: DataTypes.STRING,
+        user_id: {
+            type: DataTypes.INTEGER,
             references: {
-                model: 'User',
-                key: 'username',
+                model: 'user',
+                key: 'id',
                 unique: false
               }
         }

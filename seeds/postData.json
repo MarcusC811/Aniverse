@@ -6,7 +6,7 @@
         "linkToWatch": "https://www.youtube.com/watch?v=MZ1lIoH-3-g&ab_channel=Tobiuchiha",
         "year": "1989",
         "genre": "superpower",
-        "postUser": "OVOMARK"
+        "user_id": 2
     },
     {
         "name": "Naruto",
@@ -15,6 +15,6 @@
         "linkToWatch": "https://www.youtube.com/watch?v=DttTRPKdq-0",
         "year": "1999",
         "genre": "Shonen manga",
-        "postUser": "M2k24"
+        "user_id": 1
     }
 ]
