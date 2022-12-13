@@ -19,6 +19,20 @@ router.get('/', async (req, res) => {
     }
 
     res.status(200).json(posts);
-})
+});
+// Login Page
+router.get('/login', async (req, res) => {
+    // if(req.session.login) {
+    //     res.render('homepage');
+    // };
+
+    res.render('login');
+});
 
 module.exports = router;
+
+// login
+// main with posts
+// aboutus
+// signup on a seperate page
+// profile page
