@@ -22,9 +22,11 @@ router.get('/', async (req, res) => {
 });
 // Login Page
 router.get('/login', async (req, res) => {
-    // if(req.session.login) {
-    //     res.render('homepage');
-    // };
+   // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
 
     res.render('login');
 });
