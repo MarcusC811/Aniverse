@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Post, User } = require('../models');
-const withAuth =require('../utils/auth');
 
 router.get('/', async (req, res) => {
         const postData = await Post.findAll({
@@ -14,11 +13,7 @@ router.get('/', async (req, res) => {
 
       
         const posts = postData.map((post) => post.get({ plain: true }));
-    });
-
-
-       
-    
+});
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
