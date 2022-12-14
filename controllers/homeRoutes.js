@@ -30,9 +30,3 @@ router.get('/login', async (req, res) => {
 });
 
 module.exports = router;
-
-// login
-// main with posts
-// aboutus
-// signup on a seperate page
-// profile page
