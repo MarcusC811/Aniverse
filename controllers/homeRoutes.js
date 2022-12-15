@@ -12,6 +12,10 @@ router.get('/', async (req, res) => {
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
+
+
+    // res.status(200).json(posts);
+    res.render('homepage');
 });
 
 router.get('/login', (req, res) => {
