@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <body>
+
         <!--Main Navigation-->
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(255, 255, 255)"> 
@@ -31,13 +32,13 @@
                   <!-- Left links -->
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
+                      <a class="about.html" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Forum</a>
+                      <a class="main.html" href="#">Forum</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Profile</a>
+                      <a class="profile.html" href="#">Profile</a>
                     </li>
                   </ul>
                   <!-- Left links -->
@@ -48,207 +49,73 @@
               <!-- Container wrapper -->
             </nav>
             <!-- Navbar -->
-            <section style="background-color: #eee;">
-                <div class="container py-5">
+  <main class="main_container">
+    <section class="form_container">
+      <h2>New Post</h2>
+      <form action="/api/post" method="post">
+        <div class="form_item">
+          <label for="">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form_item">
+          <label for="">Rating</label>
+          <input type="text" name="rating" id="rating">
+        </div>
+        <div class="form_item">
+          <label for="">Complete</label>
+          <input type="text" name="complete" id="complete">
+        </div>
+        <div class="form_item">
+          <label for="">Link to watch</label>
+          <input type="text" name="linkToWatch" id="linkToWatch">
+        </div>
+        <div class="form_item">
+          <label for="">Year</label>
+          <input type="text" name="year" id="year">
+        </div>
+        <div class="form_item">
+          <label for="">Genre</label>
+          <input type="text" name="genre" id="genre">
+        </div>
+        <input type="hidden" id="user_id" name="userId" value="1"> 
+        <!-- other form items -->
+        <div class="form_submit">
+          <button type="submit">Add</button>
+        </div>
+      </form>
+
+    </section>
+    <section class="post_container">
+      <div class="post_item">
+        <h4> <span>Name</span> <span>10/10</span> </h4>
+        <p>complete</p>
+        <p>link to watch</p>
+        <p><a href="http://" target="_blank" rel="noopener noreferrer">Link to Open</a></p>
+        <p>Year</p>
+        <p>Genre</p>
+      </div>
+      <div class="post_item"></div>
+      <div class="post_item"></div>
+    </section>
+    
+
+
+
+
+
+
+
+  </main>
               
-                  <div class="row">
-              
-                    <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
-              
-                      <h5 class="font-weight-bold mb-3 text-center text-lg-start">Member</h5>
-              
-                      <div class="card">
-                        <div class="card-body">
-              
-                          <ul class="list-unstyled mb-0">
-                            <li class="p-2 border-bottom" style="background-color: #eee;">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">John Doe</p>
-                                    <p class="small text-muted">Hello, Are you there?</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">Just now</p>
-                                  <span class="badge bg-danger float-end">1</span>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2 border-bottom">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-1.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Danny Smith</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">5 mins ago</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2 border-bottom">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Alex Steward</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">Yesterday</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2 border-bottom">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-3.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Ashley Olsen</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">Yesterday</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2 border-bottom">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Kate Moss</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">Yesterday</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2 border-bottom">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Lara Croft</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">Yesterday</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="p-2">
-                              <a href="#!" class="d-flex justify-content-between">
-                                <div class="d-flex flex-row">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
-                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                                  <div class="pt-1">
-                                    <p class="fw-bold mb-0">Brad Pitt</p>
-                                    <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                                  </div>
-                                </div>
-                                <div class="pt-1">
-                                  <p class="small text-muted mb-1">5 mins ago</p>
-                                  <span class="text-muted float-end"><i class="fas fa-check" aria-hidden="true"></i></span>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-              
-                        </div>
-                      </div>
-              
-                    </div>
-              
-                    <div class="col-md-6 col-lg-7 col-xl-8">
-              
-                      <ul class="list-unstyled">
-                        <li class="d-flex justify-content-between mb-4">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
-                            class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
-                          <div class="card">
-                            <div class="card-header d-flex justify-content-between p-3">
-                              <p class="fw-bold mb-0">Brad Pitt</p>
-                              <p class="text-muted small mb-0"><i class="far fa-clock"></i> 12 mins ago</p>
-                            </div>
-                            <div class="card-body">
-                              <p class="mb-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex justify-content-between mb-4">
-                          <div class="card w-100">
-                            <div class="card-header d-flex justify-content-between p-3">
-                              <p class="fw-bold mb-0">Lara Croft</p>
-                              <p class="text-muted small mb-0"><i class="far fa-clock"></i> 13 mins ago</p>
-                            </div>
-                            <div class="card-body">
-                              <p class="mb-0">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium.
-                              </p>
-                            </div>
-                          </div>
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar"
-                            class="rounded-circle d-flex align-self-start ms-3 shadow-1-strong" width="60">
-                        </li>
-                        <li class="d-flex justify-content-between mb-4">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
-                            class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
-                          <div class="card">
-                            <div class="card-header d-flex justify-content-between p-3">
-                              <p class="fw-bold mb-0">Brad Pitt</p>
-                              <p class="text-muted small mb-0"><i class="far fa-clock"></i> 10 mins ago</p>
-                            </div>
-                            <div class="card-body">
-                              <p class="mb-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="bg-white mb-3">
-                          <div class="form-outline">
-                            <textarea class="form-control" id="textAreaExample2" rows="4"></textarea>
-                            <label class="form-label" for="textAreaExample2">Message</label>
-                          </div>
-                        </li>
-                        <button type="button" class="btn btn-info btn-rounded float-end">Send</button>
-                      </ul>
-              
-                    </div>
-              
-                  </div>
-              
-                </div>
-</body>
+
 
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
       <a class="text-dark" href="">Animeverse.com</a>
-    </div>
+    </p>
     <!-- Copyright -->
   </footer>
-
+</body>
 </html>

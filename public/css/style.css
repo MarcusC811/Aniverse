@@ -1,0 +1,44 @@
+.main_container {
+
+    padding: 10px;
+}
+
+.form_container {
+width: 80%;
+margin: auto;
+border: 1px solid rgb(44, 78, 117);
+padding: 20px;
+}
+input {
+    width: 300px;
+}
+
+label {
+    min-width: 100px;
+}
+.form_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.form_submit button {
+   padding: 10px 45px; 
+}
+.post_container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px; 
+    margin-top: 20px; 
+}
+.post_item {
+    min-height: 100px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 15px;
+} */
+ .post_item h4 {
+    display: flex;
+    justify-content: space-between;
+}
