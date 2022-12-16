@@ -36,3 +36,9 @@
 .button{
     margin-left: 175px;
 }
+
+.navbar-item,
+.navbar-link {
+    color: black;
+    display: block;
+}
