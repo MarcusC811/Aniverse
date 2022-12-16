@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <!-- Container wrapper -->
+              <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Navbar brand -->
+                  <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                    <img src="./assets/image/flc_design2022121290259 (1).jpg" height="55" alt="Animeverse logo"
+                      loading="lazy" />
+                  </a>
+                  <!-- Left links -->
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile">Profile</a>
+                    </li>
+                  </ul>
+                  <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+                  <!-- Notifications -->
+                  <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-bell"></i>
+                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">Latest update</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Anime news</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- profile logo -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                      role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                      <img src= "./assets/image/profile logo.jpeg" height="45" class="rounded-circle" height="25"
+                        alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                      <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Right elements -->
+              </div>
+              <!-- Container wrapper -->
+            </nav>
+
+<main class="main_container">
+    <section class="form_container">
+      <h2>New Post</h2>
+      <form action="/api/post" method="post">
+        <div class="form_item">
+          <label for="">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form_item">
+          <label for="">Rating</label>
+          <input type="text" name="rating" id="rating">
+        </div>
+        <div class="form_item">
+          <label for="">Complete</label>
+          <input type="text" name="complete" id="complete">
+        </div>
+        <div class="form_item">
+          <label for="">Link to watch</label>
+          <input type="text" name="linkToWatch" id="linkToWatch">
+        </div>
+        <div class="form_item">
+          <label for="">Year</label>
+          <input type="text" name="year" id="year">
+        </div>
+        <div class="form_item">
+          <label for="">Genre</label>
+          <input type="text" name="genre" id="genre">
+        </div>
+        <input type="hidden" id="user_id" name="userId" value="1">
+        <!-- other form items -->
+        <div class="form_submit">
+          <button type="submit" id="postBtn">Add</button>
+        </div>
+      </form>
+    </section>
+    <section class="post_container">
+      {{#each posts as |post|}}
+      <div class="post_item">
+        <h4> <span>{{post.name}} </span> <span>{{post.rating}}</span> </h4>
+        <p>{{post.complete}}</p>
+        <p>link to watch</p>
+        <p><a href="http://" target="_blank" rel="noopener noreferrer">{{post.linkToWatch}}</a></p>
+        <p>{{post.year}}</p>
+        <p>{{post.genre}}</p>
+      </div>
+      {{/each}}
+    </section>
+  </main>
