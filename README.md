@@ -15,7 +15,7 @@ Deployed link['https://github.com/MarcusC811/Aniverse/tree/main']
 Go to the command line and install npm start and Run nmp seed . Downlowand mysql Install and also install insomnia so that you can open browsers and go to the port 3001 unsing insomnia .
  ## Usage
 You can access and use the app through loging in or signing up for a profile. you can then interact in varies ways through the application with the help of our navigation bar/Links. Then Users can find new found passions for animes that they were never aware of through other users posts.
-![Project Screenshot](/assets/images/anime.jpg)
+![Project Screenshot](./public/assets/image/anime.jpg)
 ## Contribution
 For any future improved developments or bugs please message us at me and my peers emails .
 ## Tests
