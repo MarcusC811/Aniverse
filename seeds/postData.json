@@ -5,8 +5,7 @@
         "complete": "Yes",
         "linkToWatch": "https://www.youtube.com/watch?v=MZ1lIoH-3-g&ab_channel=Tobiuchiha",
         "year": "1989",
-        "genre": "superpower",
-        "user_id": 2
+        "genre": "superpower"
     },
     {
         "name": "Naruto",
@@ -14,7 +13,6 @@
         "complete": "Yes",
         "linkToWatch": "https://www.youtube.com/watch?v=DttTRPKdq-0",
         "year": "1999",
-        "genre": "Shonen manga",
-        "user_id": 1
+        "genre": "Shonen manga"
     }
 ]
