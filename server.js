@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 const sess = {
   secret: 'Ethan and Kyle are GOATS',
   cookie: {
-    maxAge: 4320000,
+    maxAge: 300000,
     httpOnly: true,
     secure: false,
     sameSite: 'strict',

@@ -31,12 +31,15 @@ router.get('/signup', async (req, res) => {
 });
 
 router.get('/profile' , async (req, res) => {
-    // if (!req.session.user_id) {
-    // res.redirect('/login' (user_id ))
-    // }
-    const userData = await User.findOne({ where: { id: req.session.user_id } });
-    console.log(userData);
-    res.render('profile')
+    if (!req.session.user_id) {
+    res.redirect('/login')
+    }
+    const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+      });
+
+    const user = userData.get({ plain: true });
+    res.render('profile', { ...user })
 })
 
 module.exports = router;
