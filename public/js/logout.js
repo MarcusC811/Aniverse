@@ -1,6 +1,18 @@
-// const logout = async () => {
-    // Send a POST request to the API endpoint /api/users/logout
-    
-  // };
+const logoutBtn = document.getElementById('logoutBtn');
+
+const logout = async (event) => {
+  event.preventDefault();
   
-  // document.querySelector('#logout').addEventListener('click', logout);
+  const logOff = await fetch('/api/users/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (logOff.ok) {
+    document.location.replace('/');
+  } else {
+    alert(logOff.statusText);
+  }
+};
+  
+logoutBtn.addEventListener('click', logout);
