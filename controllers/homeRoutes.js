@@ -34,6 +34,8 @@ router.get('/profile' , async (req, res) => {
     // if (!req.session.user_id) {
     // res.redirect('/login' (user_id ))
     // }
+    const userData = await User.findOne({ where: { id: req.session.user_id } });
+    console.log(userData);
     res.render('profile')
 })
 
