@@ -12,7 +12,14 @@ router.get('/', async (req, res) => {
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
+<<<<<<< HEAD
     res.render('homepage', { posts: posts }); 
+=======
+
+
+    // res.status(200).json(posts);
+    res.render('homepage');
+>>>>>>> 96d18c834241363f7ca40a01a9e550d7f68eb8a0
 });
 
 router.get('/login', (req, res) => {
