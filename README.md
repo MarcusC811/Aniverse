@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project-2
 =======
 >>>>>>> 8264732ac79a3f6392d7dbca376d58b7a852e9d9
+=======
+# Project-2
+>>>>>>> a3ec924f627325f050a3b84980d356f8783ec532
 # Aniverse  
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 ## Description
@@ -40,11 +44,6 @@ If you have questions, please reach out via email or my GitHub account.
 * GitHub: [Abdul2k24](https://github.com/abdi2k24@gmail.com)
 * Email:  [abdi2k24@gmail.com](mailto:abdi2k24@gmail.com)
 * GitHub: [vivid20221](https://github.com/vivid20221) 
-<<<<<<< HEAD
 * Email:  [julianj9011@gmail.com](mailto:julianj9011@gmail.com)
-                                                                     
+* Email:  [julianj9011@gmail.com](mailto:julianj9011@gmail.com)
 
-    
-=======
-* Email:  [julianj9011@gmail.com](mailto:julianj9011@gmail.com)]
->>>>>>> 8264732ac79a3f6392d7dbca376d58b7a852e9d9
