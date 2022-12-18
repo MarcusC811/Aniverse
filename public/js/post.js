@@ -1,25 +1,25 @@
-const postBtn = document.getElementById('');
+const postBtn = document.getElementById('postBtn');
 
 const newPost = async (event) => {
     event.preventDefault();
 
-    const name = document.getElementById('').value;
-    const rating = document.getElementById('').value;
-    const complete = document.getElementById('').value;
-    const linkToWatch = document.getElementById('').value;
-    const year = document.getElementById('').value;
-    const genre = document.getElementById('').value;
+    const name = document.getElementById('name').value;
+    const rating = document.getElementById('rating').value;
+    const complete = document.getElementById('complete').value;
+    const linkToWatch = document.getElementById('linkToWatch').value;
+    const year = document.getElementById('year').value;
+    const genre = document.getElementById('genre').value;
 
     const entry = await fetch(`/api/post`, {
         method: 'POST',
-        body: ({name, rating, complete, linkToWatch, year, genre}),
+        body: JSON.stringify({name, rating, complete, linkToWatch, year, genre}),
         headers: {
             'Content-Type': 'application/json',
         },
     });
 
     if(entry.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/');
     } else {
         console.log('try again')
     }

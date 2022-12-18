@@ -38,11 +38,11 @@ const newFormHandler = async (event) => {
     }
   };
   
-  document
-    .querySelector('.new-rating-form')
-    .addEventListener('submit', newFormHandler);
+  // document
+  //   .querySelector('.new-rating-form')
+  //   .addEventListener('submit', newFormHandler);
   
-  document
-    .querySelector('.watch-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.watch-list')
+  //   .addEventListener('click', delButtonHandler);
   

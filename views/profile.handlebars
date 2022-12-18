@@ -1,15 +1,93 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <!-- Container wrapper -->
+              <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Navbar brand -->
+                  <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                    <img src="./assets/image/flc_design2022121290259 (1).jpg" height="55" alt="Animeverse logo"
+                      loading="lazy" />
+                  </a>
+                  <!-- Left links -->
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile">Profile</a>
+                    </li>
+                    {{#if loggedIn}}
+                    <li class="nav-item">
+                      <a class="nav-link" id="logoutBtn">Logout</a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    {{/if}}
+                  </ul>
+                  <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+                  <!-- Notifications -->
+                  <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-bell"></i>
+                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">Latest update</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Anime news</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- profile logo -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                      role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                      <img src= "./assets/image/profile logo.jpeg" height="45" class="rounded-circle" height="25"
+                        alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                      <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Right elements -->
+              </div>
+              <!-- Container wrapper -->
+            </nav>        
+        
         <div class="row">
           <div class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body text-center">
                 <img
-                  src="./image/11498-2040340486.jpeg"
+                  src="./assets/image/11498-2040340486.jpeg"
                   alt="avatar"
                   class="rounded-circle img-fluid"
                   style="width: 150px"
                 />
                 <h5 class="my-3">User</h5>
-                <p class="text-muted mb-1">Favi Anime</p>
+                <p class="text-muted mb-1">{{username}}</p>
                 <p class="text-muted mb-4">Minneapolis,MN</p>
                 <div class="d-flex justify-content-center mb-2">
                   <button type="button" class="btn btn-primary">Follow</button>
@@ -26,13 +104,13 @@
                     class="list-group-item d-flex justify-content-between align-items-center p-3"
                   >
                     <i class="fas fa-globe fa-lg text-warning"></i>
-                    <p class="mb-0">https://mdbootstrap.com</p>
+                    <p class="mb-0">Horror</p>
                   </li>
                   <li
                     class="list-group-item d-flex justify-content-between align-items-center p-3"
                   >
                     <i class="fab fa-twitter fa-lg" style="color: #55acee"></i>
-                    <p class="mb-0">@mdbootstrap</p>
+                    <p class="mb-0">Action</p>
                   </li>
                   <li
                     class="list-group-item d-flex justify-content-between align-items-center p-3"
@@ -41,7 +119,7 @@
                       class="fab fa-instagram fa-lg"
                       style="color: #ac2bac"
                     ></i>
-                    <p class="mb-0">mdbootstrap</p>
+                    <p class="mb-0">Comedy</p>
                   </li>
                   <li
                     class="list-group-item d-flex justify-content-between align-items-center p-3"
@@ -50,7 +128,7 @@
                       class="fab fa-facebook-f fa-lg"
                       style="color: #3b5998"
                     ></i>
-                    <p class="mb-0">mdbootstrap</p>
+                    <p class="mb-0">Super Hero</p>
                   </li>
                 </ul>
               </div>
@@ -64,7 +142,7 @@
                     <p class="mb-0">Full Name</p>
                   </div>
                   <div class="col-sm-9">
-                    <p class="text-muted mb-0">Sasuke Uchiha</p>
+                    <p class="text-muted mb-0">{{name}}</p>
                   </div>
                 </div>
                 <hr />

@@ -1,0 +1,271 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <!-- Container wrapper -->
+              <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Navbar brand -->
+                  <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                    <img src="./assets/image/flc_design2022121290259 (1).jpg" height="55" alt="Animeverse logo"
+                      loading="lazy" />
+                  </a>
+                  <!-- Left links -->
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile">Profile</a>
+                    </li>
+                    {{#if loggedIn}}
+                    <li class="nav-item">
+                      <a class="nav-link" id="logoutBtn">Logout</a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    {{/if}}
+                  </ul>
+                  <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+                  <!-- Notifications -->
+                  <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-mdb-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-bell"></i>
+                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">Latest update</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Anime news</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- profile logo -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                      role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                      <img src= "./assets/image/profile logo.jpeg" height="45" class="rounded-circle" height="25"
+                        alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                      <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Right elements -->
+              </div>
+              <!-- Container wrapper -->
+            </nav>
+  <!-- Carousel wrapper -->
+<div
+id="carouselMultiItemExample"
+class="carousel slide carousel-dark text-center"
+data-mdb-ride="carousel"
+>
+<!-- Controls -->
+<div class="d-flex justify-content-center mb-4">
+  <button
+    class="carousel-control-prev position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Inner -->
+<div class="carousel-inner py-4">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="./assets/image/image (1).png"
+              class="card-img-top"
+              alt="Waterfall"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nasir</h5>
+              <p class="card-text">
+                One Piece
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="./assets/image/image (2).png"
+              class="card-img-top"
+              alt="Sunset Over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marcus</h5>
+              <p class="card-text">
+                Naruto
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="./assets/image/image (3).png"
+              class="card-img-top"
+              alt="Sunset over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mohamed</h5>
+              <p class="card-text">
+                Dragon Ball Z
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
+            {{!-- <img
+              src="./IMG_2007.jpg"
+              class="card-img-top"
+              alt="Fissure in Sandstone"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title"> Amanda</h5>
+              <p class="card-text">
+                Demon Slayer
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            {{!-- <img
+              src="./image(1).png"
+              class="card-img-top"
+              alt="Storm Clouds"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                One piece
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            {{!-- <img
+              src="./image(2).png"
+              class="card-img-top"
+              alt="Hot Air Balloons"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+              Naruto
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="card">
+            {{!-- <img
+              src="./image(3).png"
+              class="card-img-top"
+              alt="Peaks Against the Starry Sky"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Dragon Ball Z
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            {{!-- <img
+              src="./IMG_2007.jpg"
+              class="card-img-top"
+              alt="Bridge Over Water"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Demon Slayer
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            {{!-- <img
+              src="./julian-profile.jpg"
+              class="card-img-top"
+              alt="Purbeck Heritage Coast"
+            /> --}}
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+               Deathnote
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Inner -->
+{{!-- </div> --}}
