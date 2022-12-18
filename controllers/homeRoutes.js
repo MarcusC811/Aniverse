@@ -36,7 +36,7 @@ router.get('/signup', async (req, res) => {
     if (req.session.user_id) {
         res.redirect('/')
     }
-    res.render('signup');
+    res.render('signup', {signUp: true});
 });
 
 router.get('/profile' , async (req, res) => {
